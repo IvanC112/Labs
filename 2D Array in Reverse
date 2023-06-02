@@ -8,7 +8,6 @@ int main() {
    const int numColumns = 3;
    int userInput[numRows][numColumns];
    
-   
    for (i=0; i < numRows; ++i) {
       for (j=0; j < numColumns; ++j) {
          cin >> userInput[i][j];
@@ -21,8 +20,6 @@ int main() {
       }
       cout << endl;
    }
-   
-   
    
    return 0;
 }
