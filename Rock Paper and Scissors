@@ -1,8 +1,8 @@
    #include <iostream>
    #include <string>
-using namespace std;
+   using namespace std;
 
-int main() {
+   int main() {
    
    const int ROCK = 0;
    const int PAPER = 1;
