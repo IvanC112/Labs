@@ -11,23 +11,22 @@ int main() {
    else {cout << userInteger << "\t";}
    
    while (userInteger > 1) {
+      if (integerCount % 10 == 0) {
+      cout << endl;
+      }
       if (userInteger % 2 == 0) {
          userInteger = (userInteger / 2);
       }
       else if (userInteger % 2 != 0) {
          userInteger = ((userInteger * 3) + 1); 
       }
-       if (integerCount % 10 == 0) {
-      cout << endl;
-   }
-   integerCount++;
-   
-   if (userInteger == 1) {
+      if (userInteger == 1) {
          cout << userInteger << endl;
       }
       else {
          cout << userInteger << "\t";
       }
+      integerCount++;
    }
  
 
