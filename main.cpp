@@ -1,0 +1,26 @@
+#include <iostream>
+#include <vector>
+using namespace std;
+
+int main() {
+   bool identicalValue = true;
+   int tempValue;
+   int beginningNumber;
+   cin >> beginningNumber;
+   vector<int> userInput(beginningNumber);
+   
+   for (int i=0; i < beginningNumber; ++i) {cin >> userInput.at(i);}
+   
+   for (int i=0; i < userInput.size(); ++i) {
+      if (userInput.at(i) == userInput.at(userInput.size() - 1 - i)) {identicalValue;}
+      else {identicalValue = false;}
+   }
+   
+   if (identicalValue) {cout << "yes";}
+   else {cout << "no";}
+   
+   cout << endl;
+   
+
+   return 0;
+}
